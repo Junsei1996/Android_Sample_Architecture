@@ -50,6 +50,7 @@ dependencies {
 
     //Gson
     implementation "com.google.code.gson:gson:$version_gson"
+    implementation "com.squareup.retrofit2:converter-gson:$version_gson_convertor"
 
     //RecyclerView
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
@@ -66,6 +67,7 @@ dependencies {
 
     //Okhttp
     implementation "com.squareup.okhttp3:okhttp:$version_ok_http"
+    implementation "com.squareup.okhttp3:logging-interceptor:$version_okhttp_logging_interceptor"
 
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:$version_lifecycle_extensions"
@@ -73,5 +75,11 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$version_navigation"
     implementation "androidx.navigation:navigation-ui-ktx:$version_navigation"
+
+    //LifeCycle
+    implementation "androidx.lifecycle:lifecycle-common:$version_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-runtime:$version_lifecycle"
+    implementation "android.arch.lifecycle:extensions:$version_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$version_lifecycle"
 
 }
