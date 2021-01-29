@@ -20,7 +20,7 @@ buildscript {
         version_retrofit="2.9.0"
 
         kotlin_version = "1.3.72"
-        version_coroutine = "1.3.3"
+        version_coroutine = "1.3.9"
         version_gson = "2.8.6"
         version_ok_http = "4.2.1"
         version_chuck = "1.1.0"
