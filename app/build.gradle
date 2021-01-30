@@ -16,13 +16,27 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "env"
+    productFlavors {
+        dev {
+            dimension "env"
+        }
+        qa{
+            dimension "env"
+        }
+        stage{
+            dimension "env"
+        }
+        live {
+            dimension "env"
         }
     }
     compileOptions {
@@ -81,5 +95,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime:$version_lifecycle"
     implementation "android.arch.lifecycle:extensions:$version_lifecycle"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$version_lifecycle"
+
+    //CHUCK
+    debugImplementation "com.readystatesoftware.chuck:library:$version_chuck"
+    releaseImplementation "com.readystatesoftware.chuck:library-no-op:$version_chuck"
 
 }

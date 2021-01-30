@@ -28,6 +28,7 @@ buildscript {
         version_lifecycle_extensions = "2.1.0"
         version_okhttp_logging_interceptor = "3.12.0"
         version_lifecycle = "2.2.0"
+        version_chuck = "1.1.0"
 
     }
 
