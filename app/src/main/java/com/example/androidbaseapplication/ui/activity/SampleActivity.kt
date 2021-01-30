@@ -25,7 +25,6 @@ class SampleActivity : AppCompatActivity() {
         setupObservers()
     }
 
-
     private fun setupViewModel() {
         viewModel = ViewModelProviders.of(
             this,
@@ -34,7 +33,6 @@ class SampleActivity : AppCompatActivity() {
     }
 
     private fun setupUI() {
-
 
     }
 
