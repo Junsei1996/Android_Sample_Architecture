@@ -8,5 +8,9 @@ object Enums {
         LOADING
     }
 
+    enum class PrefFiles {
+        USER_DETAILS_PREF
+    }
+
 
 }
